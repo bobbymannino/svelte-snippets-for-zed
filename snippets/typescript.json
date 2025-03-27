@@ -1,0 +1,88 @@
+{
+  "Log to the console": {
+    "prefix": "llog",
+    "body": ["console.log($1);", "$0"],
+    "description": "Shorthand for `console.log()`."
+  },
+  "Log warning to console": {
+    "prefix": "wwarn",
+    "body": ["console.warn($1);", "$0"],
+    "description": "Shorthand for `console.warn()`."
+  },
+  "Log error to console": {
+    "prefix": "eerror",
+    "body": ["console.error($1);", "$0"],
+    "description": "Shorthand for `console.error()`"
+  },
+  "Throw an error": {
+    "prefix": "tthrow",
+    "body": ["throw new Error($1);", "$0"],
+    "description": "Throws an empty generic `Error`."
+  },
+  "Svelte Hooks": {
+    "prefix": "sv-hooks-handle",
+    "body": [
+      "import type { Handle } from '@sveltejs/kit';",
+      "",
+      "export const handle: Handle = async ({ resolve, event }) => {",
+      "  $1",
+      "",
+      "  return await resolve(event);",
+      "};"
+    ],
+    "description": "The boilerplate for an empty handle in the hooks.server.ts file."
+  },
+  "Svelte Layout Server": {
+    "prefix": "sv-layout-server-load",
+    "body": [
+      "import type { LayoutServerLoad } from './\\$types';",
+      "",
+      "export const load: LayoutServerLoad = async ({}) => {",
+      "  $1",
+      "",
+      "  return {};",
+      "};"
+    ],
+    "description": "The boilerplate for a load function in a +layout.server.ts file."
+  },
+
+  "Svelte Page Server": {
+    "prefix": "sv-page-server-load",
+    "body": [
+      "import type { PageServerLoad } from './\\$types';",
+      "",
+      "export const load: PageServerLoad = async ({ $1 }) => {",
+      "  $2",
+      "",
+      "  return { $3 };",
+      "};"
+    ],
+    "description": "The boilerplate for a load function in a +page.server.ts file."
+  },
+  "Svelte Page actions": {
+    "prefix": "sv-page-server-actions",
+    "body": [
+      "import type { Actions } from './\\$types';",
+      "import * as v from 'valibot';",
+      "",
+      "const $1Schema = v.object({",
+      "    $2",
+      "});",
+      "",
+      "export const actions: Actions = {",
+      "  default: async ({ request }) => {",
+      "    const formData = await request.formData();",
+      "",
+      "    const parsed = v.safeParse($1Schema, {",
+      "        $3: formData.get('$4')",
+      "    });",
+      "",
+      "    if (!parsed.success) $5;",
+      "",
+      "    return { $6 };",
+      "  }",
+      "};"
+    ],
+    "description": "The boilerplate for actions in a +page.server.ts file. This will also set up an empty valibot validation schema."
+  }
+}

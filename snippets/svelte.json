@@ -1,0 +1,84 @@
+{
+  "Svelte empty props script": {
+    "prefix": "sv-props",
+    "description": "A boilerplate for an empty props inside a script (ts) tag",
+    "body": [
+      "<script lang='ts'>",
+      "  type Props = {",
+      "    $1",
+      "  };",
+      "",
+      "  let { $2 }: Props = \\$props();",
+      "</script>"
+    ]
+  },
+  "Svelte Empty Script tag": {
+    "prefix": "sv-ts",
+    "body": ["<script lang='ts'>", "  $1", "</script>"],
+    "description": "A simple svelte typescript script tag"
+  },
+  "Svelte each loop": {
+    "prefix": "sv-each",
+    "body": ["{#each $1 as $2, i ($3)}", "  $4", "{/each}"],
+    "description": "A svelte each loop over an array"
+  },
+  "Svelte if block": {
+    "prefix": "sv-if",
+    "body": ["{#if $1}", "  $2", "{/if}"],
+    "description": "A simple svelte if block"
+  },
+  "Svelte if else block": {
+    "prefix": "sv-if-else",
+    "body": ["{#if $1}", "  $2", "{:else}", "  $3", "{/if}"],
+    "description": "A simple svelte if else block"
+  },
+  "Code Pre": {
+    "prefix": "sv-code",
+    "body": ["<code><pre>{JSON.stringify($1, null, 2)}</pre></code>"],
+    "description": "A code block: `<code><pre></pre></code>`."
+  },
+  "Svelte Page Script": {
+    "prefix": "sv-page-script",
+    "body": [
+      "<script lang='ts'>",
+      "  import type { PageProps } from './\\$types';",
+      "",
+      "  let { data, form }: PageProps = \\$props();",
+      "</script>"
+    ],
+    "description": "The boilerplate for getting data in a `+page.svelte` file."
+  },
+  "Svelte Layout Script": {
+    "prefix": "sv-layout-script",
+    "body": [
+      "<script lang='ts'>",
+      "  import type { LayoutProps } from './\\$types';",
+      "",
+      "  let { children, data }: LayoutProps = \\$props();",
+      "</script>",
+      "",
+      "{@render children()}"
+    ],
+    "description": "The boilerplate for getting data and children in a `+layout.svelte` file."
+  },
+  "Svelte `$derived()`": {
+    "prefix": "sv-derived",
+    "body": ["const $1 = $derived($2);"],
+    "description": "A Svelte `$derived()` function."
+  },
+  "Svelte `$state()`": {
+    "prefix": "sv-state",
+    "body": ["let $1 = $state($2);"],
+    "description": "A Svelte `$state()` function."
+  },
+  "Svelte `$effect()`": {
+    "prefix": "sv-effect",
+    "body": ["$effect(() => { $1 })"],
+    "description": "A Svelte `$effect()` function."
+  },
+  "Svelte `$inspect()`": {
+    "prefix": "sv-inspect",
+    "body": ["$inspect($1);"],
+    "description": "A Svelte `$inspect()` function."
+  }
+}
