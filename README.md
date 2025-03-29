@@ -14,6 +14,13 @@ git clone https://github.com/bobbymannino/svelte-snippets-for-zed
 
 ## Available Snippets
 
-### [loops]
+### Svelte
 
-- `sv-for-each`: [desc]
+- `sv-each`: A svelte each loop
+- `sv-each-else`: A svelte each loop with an else clause
+- `sv-if`: A svelte if statement
+- `sv-if-else`: A svelte else statement
+- `sv-props`: A script (ts) tag with an empty props
+- `sv-ts`: An empty script (ts) tag
+- `sv-page-props`: A script (ts) tag, with props, for a svelte page
+- `sv-layout-props`: A script (ts) tag, with props, for a svelte layout

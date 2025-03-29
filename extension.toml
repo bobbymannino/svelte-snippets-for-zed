@@ -1,8 +1,9 @@
 id = "svelte-snippets"
 name = "Svelte Snippets"
-version = "0.0.0"
+version = "0.0.1"
 schema_version = 1
 authors = ["Bobby Mannino <manninobobby@icloud.com>"]
 description = "Svelte snippets for the Zed IDE. A collection of Svelte snippets to improve your development speed."
 repository = "https://github.com/bobbymannino/svelte-snippets-for-zed"
-snippets = "./snippets/typescript.json"
+# snippets = ["./snippets/svelte.json", "./snippets/typescript.json"] does not work?
+snippets = "./snippets/svelte.json"

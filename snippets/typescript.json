@@ -1,26 +1,26 @@
 {
-  "Log to the console": {
-    "prefix": "llog",
-    "body": ["console.log($1);", "$0"],
-    "description": "Shorthand for `console.log()`."
+  "Svelte `$derived()`": {
+    "prefix": "sv-derived",
+    "body": ["const $1 = \\$derived($2);"],
+    "description": "A Svelte `$derived()` function."
   },
-  "Log warning to console": {
-    "prefix": "wwarn",
-    "body": ["console.warn($1);", "$0"],
-    "description": "Shorthand for `console.warn()`."
+  "Svelte `$state()`": {
+    "prefix": "sv-state",
+    "body": ["let $1 = \\$state($2);"],
+    "description": "A Svelte `$state()` function."
   },
-  "Log error to console": {
-    "prefix": "eerror",
-    "body": ["console.error($1);", "$0"],
-    "description": "Shorthand for `console.error()`"
+  "Svelte `$effect()`": {
+    "prefix": "sv-effect",
+    "body": ["\\$effect(() => { $1 })"],
+    "description": "A Svelte `$effect()` function."
   },
-  "Throw an error": {
-    "prefix": "tthrow",
-    "body": ["throw new Error($1);", "$0"],
-    "description": "Throws an empty generic `Error`."
+  "Svelte `$inspect()`": {
+    "prefix": "sv-inspect",
+    "body": ["\\$inspect($1);"],
+    "description": "A Svelte `$inspect()` function."
   },
-  "Svelte Hooks": {
-    "prefix": "sv-hooks-handle",
+  "Svelte handle hook": {
+    "prefix": "sv-handle",
     "body": [
       "import type { Handle } from '@sveltejs/kit';",
       "",
@@ -32,8 +32,21 @@
     ],
     "description": "The boilerplate for an empty handle in the hooks.server.ts file."
   },
-  "Svelte Layout Server": {
-    "prefix": "sv-layout-server-load",
+  "Svelte server layout load function": {
+    "prefix": "sv-server-layout-load",
+    "body": [
+      "import type { LayoutLoad } from './\\$types';",
+      "",
+      "export const load: LayoutLoad = async ({ data }) => {",
+      "  $1",
+      "",
+      "  return { ...data };",
+      "};"
+    ],
+    "description": "The boilerplate for a load function in a +layout.server.ts file."
+  },
+  "Svelte client layout load function": {
+    "prefix": "sv-client-layout-load",
     "body": [
       "import type { LayoutServerLoad } from './\\$types';",
       "",
@@ -45,44 +58,45 @@
     ],
     "description": "The boilerplate for a load function in a +layout.server.ts file."
   },
-
-  "Svelte Page Server": {
-    "prefix": "sv-page-server-load",
+  "Svelte server page load function": {
+    "prefix": "sv-server-page-load",
     "body": [
       "import type { PageServerLoad } from './\\$types';",
       "",
-      "export const load: PageServerLoad = async ({ $1 }) => {",
-      "  $2",
+      "export const load: PageServerLoad = async ({}) => {",
+      "  $1",
       "",
-      "  return { $3 };",
+      "  return {};",
       "};"
     ],
     "description": "The boilerplate for a load function in a +page.server.ts file."
   },
-  "Svelte Page actions": {
-    "prefix": "sv-page-server-actions",
+  "Svelte client page load function ": {
+    "prefix": "sv-client-page-load",
+    "body": [
+      "import type { PageLoad } from './\\$types';",
+      "",
+      "export const load: PageLoad = async ({ data }) => {",
+      "  $2",
+      "",
+      "  return { ...data };",
+      "};"
+    ],
+    "description": "The boilerplate for a load function in a +page.server.ts file."
+  },
+  "Svelte actions": {
+    "prefix": "sv-actions",
     "body": [
       "import type { Actions } from './\\$types';",
-      "import * as v from 'valibot';",
-      "",
-      "const $1Schema = v.object({",
-      "    $2",
-      "});",
       "",
       "export const actions: Actions = {",
       "  default: async ({ request }) => {",
       "    const formData = await request.formData();",
       "",
-      "    const parsed = v.safeParse($1Schema, {",
-      "        $3: formData.get('$4')",
-      "    });",
-      "",
-      "    if (!parsed.success) $5;",
-      "",
-      "    return { $6 };",
+      "    return {};",
       "  }",
       "};"
     ],
-    "description": "The boilerplate for actions in a +page.server.ts file. This will also set up an empty valibot validation schema."
+    "description": "The boilerplate for actions in a +page.server.ts file."
   }
 }
