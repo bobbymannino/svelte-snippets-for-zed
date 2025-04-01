@@ -1,6 +1,6 @@
 id = "svelte-snippets"
 name = "Svelte Snippets"
-version = "0.0.1"
+version = "0.0.2"
 schema_version = 1
 authors = ["Bobby Mannino <manninobobby@icloud.com>"]
 description = "Svelte snippets for the Zed IDE. A collection of Svelte snippets to improve your development speed."
