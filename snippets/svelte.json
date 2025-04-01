@@ -70,5 +70,15 @@
       "{@render children()}"
     ],
     "description": "The boilerplate for getting data and children in a `+layout.svelte` file."
+  },
+  "Svelte html block": {
+    "prefix": "sv-html",
+    "description": "A `{@html}` rendered content",
+    "body": ["{@html ${1:html}}"]
+  },
+  "Svelte style block": {
+    "prefix": "sv-style",
+    "description": "A `<style>` block",
+    "body": ["<style>", "  ${1:/* Styles here */}", "</style>"]
   }
 }

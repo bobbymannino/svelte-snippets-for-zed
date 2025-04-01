@@ -24,3 +24,5 @@ git clone https://github.com/bobbymannino/svelte-snippets-for-zed
 - `sv-ts`: An empty script (ts) tag
 - `sv-page-props`: A script (ts) tag, with props, for a svelte page
 - `sv-layout-props`: A script (ts) tag, with props, for a svelte layout
+- `sv-style`: A style tag
+- `sv-html`: A @html tag
