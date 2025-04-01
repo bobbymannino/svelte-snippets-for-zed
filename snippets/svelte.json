@@ -80,5 +80,54 @@
     "prefix": "sv-style",
     "description": "A `<style>` block",
     "body": ["<style>", "  ${1:/* Styles here */}", "</style>"]
+  },
+  "Svelte await block": {
+    "prefix": "sv-await",
+    "description": "A svelte await block",
+    "body": ["{#await ${1:promise}}", "  ${2:Loading...}", "{/await}"]
+  },
+  "Svelte then block": {
+    "prefix": "sv-then",
+    "description": "A svelte await then block",
+    "body": [
+      "{#await ${1:promise} then ${2:data}}",
+      "  ${3:<!-- Do something with the data -->}",
+      "{/await}"
+    ]
+  },
+  "Svelte await then block": {
+    "prefix": "sv-await-then",
+    "description": "A svelte await then block",
+    "body": [
+      "{#await ${1:promise}}",
+      "  ${2:Loading...}",
+      "{:then ${3:data}}",
+      "  ${4:<!-- Do something with the data -->}",
+      "{/await}"
+    ]
+  },
+  "Svelte await catch block": {
+    "prefix": "sv-await-catch",
+    "description": "A svelte await catch block",
+    "body": [
+      "{#await ${1:promise}}",
+      "  ${2:Loading...}",
+      "{:catch ${3:error}}",
+      "  ${4:<!-- Do something with the error -->}",
+      "{/await}"
+    ]
+  },
+  "Svelte await then catch block": {
+    "prefix": "sv-await-then-catch",
+    "description": "A svelte await then catch block",
+    "body": [
+      "{#await ${1:promise}}",
+      "  ${2:Loading...}",
+      "{:then ${3:data}}",
+      "  ${4:<!-- Do something with the data -->}",
+      "{:catch ${5:error}}",
+      "  ${6:<!-- Do something with the error -->}",
+      "{/await}"
+    ]
   }
 }
