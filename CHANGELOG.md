@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.0.3
+
+### ✨ New Snippets
+
+- `sv-global-style`
+- `sv-head`
+- `sv-window`
+
 ## v0.0.2
 
 ### ✨ New Snippets

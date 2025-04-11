@@ -81,6 +81,11 @@
     "description": "A `<style>` block",
     "body": ["<style>", "  ${1:/* Styles here */}", "</style>"]
   },
+  "Svelte global style block": {
+    "prefix": "sv-global-style",
+    "description": "A `<style :global>` block",
+    "body": ["<style :global>", "  ${1:/* Styles here */}", "</style>"]
+  },
   "Svelte await block": {
     "prefix": "sv-await",
     "description": "A svelte await block",
@@ -129,5 +134,15 @@
       "  ${6:<!-- Do something with the error -->}",
       "{/await}"
     ]
+  },
+  "Svelte window component": {
+    "prefix": "sv-window",
+    "description": "A `<svelte:window />` component",
+    "body": ["<svelte:window $1 />"]
+  },
+  "Svelte head component": {
+    "prefix": "sv-head",
+    "description": "A `<svelte:head>` component",
+    "body": ["<svelte:head>", "  ${1:<!-- Content here -->}", "</svelte:head>"]
   }
 }

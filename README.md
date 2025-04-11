@@ -25,9 +25,12 @@ git clone https://github.com/bobbymannino/svelte-snippets-for-zed
 - `sv-page-props`: A script (ts) tag, with props, for a svelte page
 - `sv-layout-props`: A script (ts) tag, with props, for a svelte layout
 - `sv-style`: A style tag
+- `sv-global-style`: A global style tag
 - `sv-html`: A @html tag
 - `sv-await`: An await tag
 - `sv-then`: An await then tag with no loading content
 - `sv-await-then`: An await then tag with loading content
 - `sv-await-catch`: An await catch tag with loading content
 - `sv-await-then-catch`: An await then catch tag with loading content
+- `sv-window`: A `<svelte:window />` tag
+- `sv-head`: A `<svelte:head>` tag
