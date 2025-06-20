@@ -16,6 +16,7 @@ git clone https://github.com/bobbymannino/svelte-snippets-for-zed
 
 ### Svelte
 
+- `sv-loop`: An un-keyed loop
 - `sv-each`: A svelte each loop
 - `sv-each-else`: A svelte each loop with an else clause
 - `sv-if`: A svelte if statement

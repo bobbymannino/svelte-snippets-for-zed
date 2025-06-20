@@ -26,6 +26,11 @@
     ],
     "description": "A svelte each loop over an array"
   },
+  "Svelte un-keyed loop": {
+    "prefix": "sv-loop",
+    "body": ["{#each { length: ${1:10} }}", "  $2", "{/each}"],
+    "description": "A svelte un-keyed loop"
+  },
   "Svelte each else loop": {
     "prefix": "sv-each-else",
     "body": [

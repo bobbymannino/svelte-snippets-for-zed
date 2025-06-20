@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.0.5
+
+### ✨ New Snippets
+
+- `sv-loop`
+
 ## v0.0.4
 
 ### ✨ New Snippets
