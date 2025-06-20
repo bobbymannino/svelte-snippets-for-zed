@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.0.4
+
+### ✨ New Snippets
+
+- `sv-on-mount`
+
 ## v0.0.3
 
 ### ✨ New Snippets

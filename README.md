@@ -34,3 +34,4 @@ git clone https://github.com/bobbymannino/svelte-snippets-for-zed
 - `sv-await-then-catch`: An await then catch tag with loading content
 - `sv-window`: A `<svelte:window />` tag
 - `sv-head`: A `<svelte:head>` tag
+- `sv-on-mount`: A blank `onMount` function

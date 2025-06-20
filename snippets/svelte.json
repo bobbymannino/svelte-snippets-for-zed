@@ -144,5 +144,16 @@
     "prefix": "sv-head",
     "description": "A `<svelte:head>` component",
     "body": ["<svelte:head>", "  ${1:<!-- Content here -->}", "</svelte:head>"]
+  },
+  "Svelte onMount": {
+    "prefix": "sv-on-mount",
+    "description": "A blank onMount function",
+    "body": [
+      "import { onMount } from \"svelte\";",
+      "",
+      "onMount(() => {",
+      "  ${1:// Code here}",
+      "})"
+    ]
   }
 }
