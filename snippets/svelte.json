@@ -160,5 +160,14 @@
       "  ${1:// Code here}",
       "})"
     ]
+  },
+  "Svelte snippet": {
+    "prefix": "sv-snippet",
+    "description": "An empty svelte snippet",
+    "body": [
+      "{#snippet ${1:mySnippet}()}",
+      "  ${2:<!-- Snippet here -->}",
+      "{/snippet}"
+    ]
   }
 }

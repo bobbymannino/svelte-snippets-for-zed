@@ -36,3 +36,4 @@ git clone https://github.com/bobbymannino/svelte-snippets-for-zed
 - `sv-window`: A `<svelte:window />` tag
 - `sv-head`: A `<svelte:head>` tag
 - `sv-on-mount`: A blank `onMount` function
+- `sv-snippet`: An empty snippet

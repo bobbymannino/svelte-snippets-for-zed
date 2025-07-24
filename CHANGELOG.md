@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.0.6
+
+### ✨ New Snippets
+
+- `sv-snippet`: An empty snippet
+
 ## v0.0.5
 
 ### ✨ New Snippets

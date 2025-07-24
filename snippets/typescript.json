@@ -4,6 +4,11 @@
     "body": ["const $1 = \\$derived($2);"],
     "description": "A Svelte `$derived()` function."
   },
+  "Svelte `$derived(await)`": {
+    "prefix": "sv-await-derived",
+    "body": ["const $1 = \\$derived(await $2);"],
+    "description": "A Svelte `$derived(await)` function."
+  },
   "Svelte `$state()`": {
     "prefix": "sv-state",
     "body": ["let $1 = \\$state($2);"],
