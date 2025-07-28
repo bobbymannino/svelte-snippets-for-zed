@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.0.7
+
+### ✨ New Snippets
+
+- `sv-debug`: A `@debug` tag
+
 ## v0.0.6
 
 ### ✨ New Snippets

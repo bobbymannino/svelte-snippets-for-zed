@@ -169,5 +169,10 @@
       "  ${2:<!-- Snippet here -->}",
       "{/snippet}"
     ]
+  },
+  "Svelte @debug": {
+    "prefix": "sv-debug",
+    "description": "A `@debug` tag",
+    "body": ["{@debug ${1:variable}}"]
   }
 }
