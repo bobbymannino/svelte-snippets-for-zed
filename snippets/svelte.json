@@ -174,5 +174,10 @@
     "prefix": "sv-debug",
     "description": "A `@debug` tag",
     "body": ["{@debug ${1:variable}}"]
+  },
+  "Svelte key block": {
+    "prefix": "sv-key",
+    "description": "A svelte {#key} block",
+    "body": ["{#key ${1:expression}}", "  $2", "{/key}"]
   }
 }

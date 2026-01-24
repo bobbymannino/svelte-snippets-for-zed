@@ -1,32 +1,38 @@
 # Changelog
 
+## v0.0.8
+
+### New Snippets
+
+- `sv-key`: A svelte {#key} block
+
 ## v0.0.7
 
-### ✨ New Snippets
+### New Snippets
 
 - `sv-debug`: A `@debug` tag
 
 ## v0.0.6
 
-### ✨ New Snippets
+### New Snippets
 
 - `sv-snippet`: An empty snippet
 
 ## v0.0.5
 
-### ✨ New Snippets
+### New Snippets
 
 - `sv-loop`
 
 ## v0.0.4
 
-### ✨ New Snippets
+### New Snippets
 
 - `sv-on-mount`
 
 ## v0.0.3
 
-### ✨ New Snippets
+### New Snippets
 
 - `sv-global-style`
 - `sv-head`
@@ -34,7 +40,7 @@
 
 ## v0.0.2
 
-### ✨ New Snippets
+### New Snippets
 
 - `sv-style`
 - `sv-html`
@@ -46,7 +52,7 @@
 
 ## v0.0.1
 
-### ✨ New Snippets
+### New Snippets
 
 - `sv-each`
 - `sv-each-else`

@@ -2,11 +2,14 @@
 
 ## Installation
 
+You can install this directly on the [Zed extensions
+page](https://zed.dev/extensions/svelte-snippets) or by following these steps:
+
 1. Clone this repo:
 
-```
-git clone https://github.com/bobbymannino/svelte-snippets-for-zed
-```
+   ```sh
+   git clone https://github.com/bobbymannino/svelte-snippets-for-zed
+   ```
 
 2. Go to Extensions menu in Zed IDE
 3. Click "Install Dev Extension"
@@ -38,3 +41,4 @@ git clone https://github.com/bobbymannino/svelte-snippets-for-zed
 - `sv-on-mount`: A blank `onMount` function
 - `sv-snippet`: An empty snippet
 - `sv-debug`: A `@debug` tag
+- `sv-key`: A svelte {#key} block
