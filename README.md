@@ -42,3 +42,17 @@ page](https://zed.dev/extensions/svelte-snippets) or by following these steps:
 - `sv-snippet`: An empty snippet
 - `sv-debug`: A `@debug` tag
 - `sv-key`: A svelte {#key} block
+
+### TypeScript
+
+- `sv-derived`: A Svelte `$derived()` function
+- `sv-await-derived`: A Svelte `$derived(await)` function
+- `sv-state`: A Svelte `$state()` function
+- `sv-effect`: A Svelte `$effect()` function
+- `sv-inspect`: A Svelte `$inspect()` function
+- `sv-handle`: The boilerplate for an empty handle in the hooks.server.ts file
+- `sv-server-layout-load`: The boilerplate for a load function in a +layout.server.ts file
+- `sv-client-layout-load`: The boilerplate for a load function in a +layout.ts file
+- `sv-server-page-load`: The boilerplate for a load function in a +page.server.ts file
+- `sv-client-page-load`: The boilerplate for a load function in a +page.ts file
+- `sv-actions`: The boilerplate for actions in a +page.server.ts file
