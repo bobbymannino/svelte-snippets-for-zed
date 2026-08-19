@@ -179,5 +179,32 @@
     "prefix": "sv-key",
     "description": "A svelte {#key} block",
     "body": ["{#key ${1:expression}}", "  $2", "{/key}"]
+  },
+  "Svelte render tag": {
+    "prefix": "sv-render",
+    "description": "A `{@render}` tag for rendering a snippet",
+    "body": ["{@render ${1:mySnippet}($2)}"]
+  },
+  "Svelte boundary": {
+    "prefix": "sv-boundary",
+    "description": "A `<svelte:boundary>` with a failed snippet",
+    "body": [
+      "<svelte:boundary>",
+      "  ${1:<!-- Content here -->}",
+      "",
+      "  {#snippet failed(error, reset)}",
+      "    ${2:<button onclick={reset}>Try again</button>}",
+      "  {/snippet}",
+      "</svelte:boundary>"
+    ]
+  },
+  "Svelte element": {
+    "prefix": "sv-element",
+    "description": "A `<svelte:element>` dynamic element",
+    "body": [
+      "<svelte:element this={${1:tag}}>",
+      "  ${2:<!-- Content here -->}",
+      "</svelte:element>"
+    ]
   }
 }

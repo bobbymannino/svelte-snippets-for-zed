@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.1.0
+
+### New Snippets
+
+- `sv-render`: A `{@render}` tag for rendering a snippet
+- `sv-boundary`: A `<svelte:boundary>` with a failed snippet
+- `sv-element`: A `<svelte:element>` dynamic element
+- `sv-endpoint`: The boilerplate for a request handler in a +server.ts file
+
 ## v0.0.9
 
 ### New Snippets

@@ -103,5 +103,19 @@
       "};"
     ],
     "description": "The boilerplate for actions in a +page.server.ts file."
+  },
+  "Svelte API route handler": {
+    "prefix": "sv-endpoint",
+    "body": [
+      "import { json } from '@sveltejs/kit';",
+      "import type { RequestHandler } from './\\$types';",
+      "",
+      "export const ${1:GET}: RequestHandler = async ({ request }) => {",
+      "  $2",
+      "",
+      "  return json({});",
+      "};"
+    ],
+    "description": "The boilerplate for a request handler in a +server.ts file."
   }
 }

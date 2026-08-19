@@ -42,6 +42,9 @@ page](https://zed.dev/extensions/svelte-snippets) or by following these steps:
 - `sv-snippet`: An empty snippet
 - `sv-debug`: A `@debug` tag
 - `sv-key`: A svelte {#key} block
+- `sv-render`: A `{@render}` tag for rendering a snippet
+- `sv-boundary`: A `<svelte:boundary>` with a failed snippet
+- `sv-element`: A `<svelte:element>` dynamic element
 
 ### TypeScript
 
@@ -56,3 +59,4 @@ page](https://zed.dev/extensions/svelte-snippets) or by following these steps:
 - `sv-server-page-load`: The boilerplate for a load function in a +page.server.ts file
 - `sv-client-page-load`: The boilerplate for a load function in a +page.ts file
 - `sv-actions`: The boilerplate for actions in a +page.server.ts file
+- `sv-endpoint`: The boilerplate for a request handler in a +server.ts file
