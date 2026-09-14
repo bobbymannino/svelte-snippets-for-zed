@@ -21,7 +21,9 @@ page](https://zed.dev/extensions/svelte-snippets) or by following these steps:
 
 - `sv-loop`: An un-keyed loop
 - `sv-each`: A svelte each loop
+- `sv-each-index`: A svelte each loop with an index
 - `sv-each-else`: A svelte each loop with an else clause
+- `sv-each-else-index`: A svelte each loop with an index and an else clause
 - `sv-if`: A svelte if statement
 - `sv-if-else`: A svelte else statement
 - `sv-props`: A script (ts) tag with an empty props
