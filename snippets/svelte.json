@@ -20,11 +20,20 @@
   "Svelte each loop": {
     "prefix": "sv-each",
     "body": [
-      "{#each ${1:array} as ${2:item}, i (${3:item})}",
+      "{#each ${1:array} as ${2:item} (${3:item})}",
       "  $4",
       "{/each}"
     ],
     "description": "A svelte each loop over an array"
+  },
+  "Svelte each loop with index": {
+    "prefix": "sv-each-index",
+    "body": [
+      "{#each ${1:array} as ${2:item}, ${3:index} (${4:item})}",
+      "  $5",
+      "{/each}"
+    ],
+    "description": "A svelte each loop over an array with an index"
   },
   "Svelte un-keyed loop": {
     "prefix": "sv-loop",
@@ -34,13 +43,24 @@
   "Svelte each else loop": {
     "prefix": "sv-each-else",
     "body": [
-      "{#each ${1:array} as ${2:item}, i (${3:item})}",
+      "{#each ${1:array} as ${2:item} (${3:item})}",
       "  $4",
       "{:else}",
       "  $5",
       "{/each}"
     ],
     "description": "A svelte each loop over an array"
+  },
+  "Svelte each else loop with index": {
+    "prefix": "sv-each-else-index",
+    "body": [
+      "{#each ${1:array} as ${2:item}, ${3:index} (${4:item})}",
+      "  $5",
+      "{:else}",
+      "  $6",
+      "{/each}"
+    ],
+    "description": "A svelte each loop over an array with an index"
   },
   "Svelte if block": {
     "prefix": "sv-if",
