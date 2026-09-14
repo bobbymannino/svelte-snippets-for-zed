@@ -1,5 +1,16 @@
 # Changelog
 
+## UNRELEASED
+
+### Breaking Changes
+
+- `sv-each` and `sv-each-else` have the index argument removed, this is replaced with `sv-each-index` and `sv-each-else-index`
+
+### New Snippets
+
+- `sv-each-index`: A svelte each loop with an index
+- `sv-each-else-index`: A svelte each loop with an index and an else clause
+
 ## v0.1.0
 
 ### New Snippets
